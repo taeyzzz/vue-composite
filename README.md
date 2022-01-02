@@ -1,5 +1,9 @@
 # vue-composite
 
+# TODO
+- Calculator app
+- Learning composite api
+
 ## Project setup
 ```
 yarn install
