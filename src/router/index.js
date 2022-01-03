@@ -1,11 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    redirect: "/application",
   },
   {
     path: '/login',
@@ -17,7 +15,7 @@ const routes = [
     children: [
       {
         path: "",
-        component: () => import(/* webpackChunkName: "about" */ '../views/ListApp.vue'),
+        component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue'),
       },
       {
         path: "calculator",
